@@ -1,3 +1,13 @@
+# Quick Start
+## Mac OS
+Download Adoptium JDK 
+
+Download maven binary tar.gz
+https://maven.apache.org/download.cgi
+
+### Extract 
+tar -xpache-maven-3.8.7-bin.tar.gz
+
 # Programming the IoT - Java Components
 This is the source repository for the Java components related to my Programming the Internet of Things book and Connected Devices IoT course. These are shell wrappers ONLY and are not a solution set (which is a separate repository, not yet released). For convenience to the reader, some basic functionality has already been implemented (such as configuration logic, consts, interfaces, a simple certificate file load utility, and test cases).
 
