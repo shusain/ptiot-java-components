@@ -27,7 +27,7 @@ public class SystemCpuUtilTask extends BaseSystemUtilTask
 	 */
 	public SystemCpuUtilTask()
 	{
-		super(ConfigConst.NOT_SET, ConfigConst.DEFAULT_TYPE_ID);
+		super(ConfigConst.SYSTEM_PERF_MSG, ConfigConst.SYSTEM_PERF_TYPE);
 	}
 	
 	
@@ -36,7 +36,7 @@ public class SystemCpuUtilTask extends BaseSystemUtilTask
 	@Override
 	public float getTelemetryValue()
 	{
-		return 0.0f;
+		return (float)ManagementFactory.getOperatingSystemMXBean().getSystemLoadAverage();
 	}
 	
 }
